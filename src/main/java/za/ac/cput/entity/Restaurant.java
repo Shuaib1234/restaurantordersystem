@@ -1,3 +1,8 @@
+/*
+Restaurant.java
+Author Demi Alexis Farquhar (220322104)
+Date: 31 March 2022
+ */
 package za.ac.cput.entity;
 
 public class Restaurant {
