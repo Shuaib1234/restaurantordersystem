@@ -21,22 +21,9 @@ class TableFactoryTest {
         System.out.println("Table Details added..");
         System.out.println();
     }
-    @Test
-    //create new table with missing values
-    void b_createNewTable()  {
-        Table table = new Table.Builder()
-                .setTableId("02A")
-                .setTableNo(5)
-                .build();
 
-        assertNotNull(table);
-        Table table1=null;
-        assertNull(table1);
-
-        System.out.println("Table added...");
-    }
     @Test
-    void c_showTableDetails(){
+    void b_showTableDetails(){
         //Show Table details
         Table showTable = TableFactory.createTable("101A",1,5,true);
         System.out.println(showTable.toString());
@@ -44,4 +31,3 @@ class TableFactoryTest {
     }
     }
 
-    
