@@ -22,7 +22,8 @@ class RestaurantRepositoryTest {
     void a_create() {
         Restaurant created= repository.create(restaurant);
         assertEquals(restaurant.getRestaurantId(),created.getRestaurantId());
-        System.out.println("create" +created);
+        System.out.println("Create restaurant: ");
+        System.out.println(created);
         System.out.println();
     }
 
@@ -30,8 +31,8 @@ class RestaurantRepositoryTest {
     void b_read() {
         Restaurant read=repository.read(restaurant.getRestaurantId());
         assertNotNull(read);
+        System.out.println("Read restaurant: ");
         System.out.println(read);
-        System.out.println("Read "+read);
         System.out.println();
     }
 
@@ -39,7 +40,8 @@ class RestaurantRepositoryTest {
     void c_update() {
      Restaurant updated= new Restaurant.Builder().copy(restaurant).setOpen(false).build();
      assertNotNull(repository.update(updated));
-     System.out.println("Updated version "+updated);
+     System.out.println("Updated version Of restaurant: ");
+     System.out.println(updated);
      System.out.println();
     }
 
@@ -47,7 +49,8 @@ class RestaurantRepositoryTest {
     void e_delete() {
         boolean success=repository.delete(restaurant.getRestaurantId());
         assertTrue(success);
-        System.out.println("Deleted: "+success);
+        System.out.println("Delete restaurant: ");
+        System.out.println(success);
         System.out.println();
     }
 

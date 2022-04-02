@@ -1,6 +1,6 @@
 /*
 RestaurantFactory.java
-Author Demi Alexis Farquhar 220322104
+Author Demi Alexis Farquhar (220322104)
 Date: 1 April 2022
  */
 package za.ac.cput.factory;

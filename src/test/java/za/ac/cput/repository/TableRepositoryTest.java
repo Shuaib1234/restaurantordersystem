@@ -20,7 +20,8 @@ private static Table table= TableFactory.createTable("02A",3,10,true);
     void a_create() {
         Table created= repository.create(table);
         assertEquals(table.getTableId(),created.getTableId());
-        System.out.println("create Table:" +created);
+        System.out.println("Create table:");
+        System.out.println(created);
         System.out.println();
 
     }
@@ -29,8 +30,8 @@ private static Table table= TableFactory.createTable("02A",3,10,true);
     void b_read() {
         Table read=repository.read(table.getTableId());
         assertNotNull(read);
+        System.out.println("Read table: ");
         System.out.println(read);
-        System.out.println("Read table: "+read);
         System.out.println();
     }
 
@@ -38,7 +39,8 @@ private static Table table= TableFactory.createTable("02A",3,10,true);
     void c_update() {
         Table updated= new Table.Builder().copy(table).setTableAvailable(false).build();
         assertNotNull(repository.update(updated));
-        System.out.println("Updated Version: " +updated);
+        System.out.println("Updated Version of table: ");
+        System.out.println(updated);
         System.out.println();
     }
 
@@ -46,7 +48,8 @@ private static Table table= TableFactory.createTable("02A",3,10,true);
     void e_delete() {
         boolean success=repository.delete(table.getTableId());
         assertTrue(success);
-        System.out.println("Table is deleted" +success);
+        System.out.println("Delete table" );
+        System.out.println(success);
         System.out.println();
     }
 

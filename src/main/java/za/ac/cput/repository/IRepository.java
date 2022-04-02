@@ -1,10 +1,11 @@
 /*
 IRepository.java
-Author Demi Alexis Farquhar (220322104)
-Date: 31 March 2022
+Author
+Date: 1 April 2022
  */
 
 package za.ac.cput.repository;
+//don't add any code here
 
 public interface IRepository <T,ID>{
     T create(T t);

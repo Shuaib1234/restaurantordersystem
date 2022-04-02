@@ -1,16 +1,11 @@
 /*
-RestaurantRepository.java
-Author Demi Alexis Farquhar (220322104)
-Date: 31 March 2022
- */
-package za.ac.cput.repository;
-/*
 TableRepository.java
 Author Demi Alexis Farquhar (220322104)
 Date: 1 April 2022
  */
-import za.ac.cput.entity.Table;
+package za.ac.cput.repository;
 
+import za.ac.cput.entity.Table;
 import java.util.HashSet;
 import java.util.Set;
 

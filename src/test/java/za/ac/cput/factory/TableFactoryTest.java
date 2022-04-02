@@ -8,14 +8,13 @@ package za.ac.cput.factory;
 import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestMethodOrder;
-import za.ac.cput.entity.Restaurant;
 import za.ac.cput.entity.Table;
-
 import static org.junit.jupiter.api.Assertions.*;
+
 @TestMethodOrder(MethodOrderer.MethodName.class)
 class TableFactoryTest {
     @Test
-    void a_CreateTable(){
+    void a_createTable(){
         Table table= TableFactory.createTable("01A",1,5,true);
         assertNotNull(table);
         System.out.println(table);
@@ -23,23 +22,32 @@ class TableFactoryTest {
         System.out.println();
     }
     @Test
-    //create new table with missing values and test fails
-    void b_CreateNewTable()  {
+    //create new table with missing values
+    void b_createNewTable()  {
         Table table = new Table.Builder()
                 .setTableId("02A")
                 .setTableNo(5)
                 .build();
+
         assertNotNull(table);
-        System.out.println(table);
+        Table table1=null;
+        assertNull(table1);
+
         System.out.println("Table added...");
     }
     @Test
     void c_showTableDetails(){
-        //Show Restaurant details
-        Table table = TableFactory.createTable("101A",1,5,true);
-        System.out.println(table);
-        assertNotNull(table);
+        //Show Table details
+        Table showTable = TableFactory.createTable("101A",1,5,true);
+        System.out.println(showTable.toString());
+        assertNotNull(showTable);
     }
+    @Test
+    void d_testIdentityOfRestaurant(){
+        //object identity
+        Table TableIdentity1=TableFactory.createTable("0);
+    }
+
 
 
 
