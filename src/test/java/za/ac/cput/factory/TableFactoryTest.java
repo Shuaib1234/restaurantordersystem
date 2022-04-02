@@ -24,7 +24,7 @@ class TableFactoryTest {
 
     @Test
     void b_showTableDetails(){
-        //Show Table details
+        //Show table details
         Table showTable = TableFactory.createTable("101A",1,5,true);
         System.out.println(showTable.toString());
         assertNotNull(showTable);
