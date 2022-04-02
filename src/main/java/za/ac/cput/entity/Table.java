@@ -26,33 +26,20 @@ private Table(Builder builder){
         return tableId;
     }
 
-    public void setTableId(String tableId) {
-        this.tableId = tableId;
-    }
 
     public int getTableNo() {
         return tableNo;
-    }
-
-    public void setTableNo(int tableNo) {
-        this.tableNo = tableNo;
     }
 
     public int getNoOfSeats() {
         return noOfSeats;
     }
 
-    public void setNoOfSeats(int noOfSeats) {
-        this.noOfSeats = noOfSeats;
-    }
 
     public boolean isTableAvailable() {
         return isTableAvailable;
     }
 
-    public void setTableAvailable(boolean tableAvailable) {
-        isTableAvailable = tableAvailable;
-    }
 
     @Override
     public String toString() {

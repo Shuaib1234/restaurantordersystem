@@ -42,14 +42,6 @@ class TableFactoryTest {
         System.out.println(showTable.toString());
         assertNotNull(showTable);
     }
-    @Test
-    void d_testIdentityOfRestaurant(){
-        //object identity
-        Table TableIdentity1=TableFactory.createTable("0);
     }
 
-
-
-
-
-}
+    

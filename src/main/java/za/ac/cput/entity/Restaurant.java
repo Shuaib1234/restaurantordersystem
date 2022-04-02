@@ -26,41 +26,26 @@ public class Restaurant {
         return restaurantId;
     }
 
-    public void setRestaurantId(String restaurantId) {
-        this.restaurantId = restaurantId;
-    }
 
     public String getRestaurantName() {
         return restaurantName;
     }
 
-    public void setRestaurantName(String restaurantName) {
-        this.restaurantName = restaurantName;
-    }
 
     public String getRestaurantAddress() {
         return restaurantAddress;
     }
 
-    public void setRestaurantAddress(String restaurantAddress) {
-        this.restaurantAddress = restaurantAddress;
-    }
 
     public String getRestaurantTelphone() {
         return restaurantTelphone;
     }
 
-    public void setRestaurantTelphone(String restaurantTelphone) {
-        this.restaurantTelphone = restaurantTelphone;
-    }
 
     public boolean isOpen() {
         return isOpen;
     }
 
-    public void setOpen(boolean open) {
-        isOpen = open;
-    }
 
     @Override
     public String toString() {
